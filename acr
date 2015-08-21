@@ -1,0 +1,6 @@
+#!/bin/bash
+#$1 defines the .c file you want to flash without the ".c"!
+#$2 defines the avr's full name, eg. attiny85
+#$3 defines the avr's short name, eg. t85
+avr-gcc -mmcu=$2 -Wall -Os -o $1.elf $1.c && avr-objcopy -j .text -j .data -O ihex $1.elf $1.hex && sudo avrdude -p $3 -c usbasp -e -U flash:w:$1.hex && rm $1.elf && rm $1.hex
+#Use example: acr c_file_without_the_dot_c_suffix attiny85 t85
