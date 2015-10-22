@@ -268,7 +268,8 @@ int main()
 	}
 	clear(0,0,xres,yres);
 	int c;
-	printf("Framebufferpuukotus v0.01\nEmil Fihlman\nGraffathon 2015\n0: Clear 1: Square 2: Animated 3: Smooth 4: Noise 5: Mandelbrot 6: Iterated 7: Zoom\n");
+	printf("Framebufferpuukotus v0.01\nEmil Fihlman\nGraffathon 2015\n");
+	printf("0: Clear 1: Square 2: Animated 3: Smooth 4: Noise 5: Mandelbrot 6: Iterated 7: Zoom\n");
 	printf("Command: ");
 	while(1)
 	{
