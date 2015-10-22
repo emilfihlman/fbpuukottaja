@@ -1,6 +1,8 @@
 #!/bin/bash
 # Script to compile and execute a c program in one step.
 
+set -eu
+
 # Get file name without the .c extension
 file_name=$(echo $1|sed 's/\(.*\)\.c/\1/')
 
