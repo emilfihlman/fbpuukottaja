@@ -1,4 +1,7 @@
 #!/bin/bash
+
+set -eu
+
 #$1 defines the .c file you want to flash without the ".c"!
 #$2 defines the avr's full name, eg. attiny85
 #$3 defines the avr's short name, eg. t85
